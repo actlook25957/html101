@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+  </style>
+  <body>
+    <h1>Payment Methods</h1>
+    <div style="display: flex">
+      <div>
+        <table border="1" style="width: 150%; height: 150px">
+          <tr>
+            <th>Items</th>
+            <th>Quantity</th>
+            <th>Price(THB)</th>
+          </tr>
+          <tr>
+            <td>
+                <div style="margin-bottom: 80px;">
+              <p><b>Toy Name</b> by Brand</p>
+              <pre>Gender     Age</pre>
+              <p style="color: red; font-weight: 500">
+                In Stock/Out of Stock
+              </p>
+              </div>
+            </td>
+            <td>
+              <div style="margin-left: 70px; margin-bottom: 130px">1</div>
+            </td>
+            <td>              <div style="margin-left: 50px; margin-bottom: 130px">100.00</div></td>
+          </tr>
+          <tr>
+            <td>
+                <div style="margin-bottom: 80px;">
+                    <p><b>Toy Name</b> by Brand</p>
+                    <pre>Gender     Age</pre>
+                    <p style="color: red; font-weight: 500">
+                      In Stock/Out of Stock
+                    </p>
+                    </div>
+            </td>
+            <td>              <div style="margin-left: 70px; margin-bottom: 130px">1</div></td>
+            <td>              <div style="margin-left: 50px; margin-bottom: 130px">100.00</div></td>
+          </tr>
+        </table>
+      </div>
+      <div style="margin-left: 200px">
+        <h3>Order Summary</h3>
+        <div style="display: flex">
+          <div>Items(2):</div>
+          <div style="color: crimson; margin-left: 5px">200.00</div>
+          <div style="margin-left: 5px">THB</div>
+        </div>
+        <div style="display: flex">
+          <div>Shipping Fee:</div>
+          <div style="color: crimson; margin-left: 5px">150.00</div>
+          <div style="margin-left: 5px">THB</div>
+        </div>
+        <hr style="color: darkgreen" />
+        <h3 style="display: flex">
+          Order Total:
+          <div style="color: crimson; margin-left: 5px; margin-right: 5px">
+            200.00
+          </div>
+          THB
+        </h3>
+      </div>
+    </div>
+    <p style="margin-bottom: -5px;">Shipping Method: Kerry Express</p>
+<br>
+<b><p style="margin-bottom: -5px;">Select payment methods</p>  </b>
+<div style="display: flex; margin-bottom: -20px;"><input type="radio" name="radio"> <b><p>Credit Or Debit Cards</p></div></b>
+<div style="display: flex; margin-bottom: -20px;"><input type="radio" name="radio"> <b><p>Paypal</p></div></b>
+<div style="display: flex;"><input type="radio" name="radio"> <b><p>Line Pay</p></div></b>
 </body>
 </html>
